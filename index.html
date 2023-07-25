@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Meme Monkey</title>
+</head>
+
+<body>
+  <div class="landing">
+    <div class="landing_img">
+      <img src="./Assets/3600_3_07.png" alt="meme monkey">
+    </div>
+    <div class="landing_text">
+      Hi, I'm Caco, the Meme Monkey! I make memes by banging my banana against the keyboard and hoping for the best.
+      Want to see?
+    </div>
+    <div class="landing_btn">
+      <a href="#memage"><button>Put Caco to work</button></a>
+    </div>
+  </div>
+  <div class="memage" id="memage">
+    <div class="meme_disclaimer">
+      Help Caco out by providing some information below ~
+    </div>
+    <form id="meme_form">
+      <div class="meme_img-url">
+        <label for="img-url">Image URL</label>
+        <input id="img-url" type="url" name="img-url" placeholder="" autocomplete="off">
+      </div>
+      <div class="meme_top-text">
+        <label for="top-text">Top Text</label>
+        <input id="top-text" type="text" name="top-text" placeholder="" autocomplete="off" maxlength="36">
+      </div>
+      <div class="meme_bottom-text">
+        <label for="bottom-text">Bottom Text</label>
+        <input id="bottom-text" type="text" name="bottom-text" placeholder="" autocomplete="off" maxlength="36">
+      </div>
+      <button type="submit" id="form-submit">Find out if Caco gets to keep his job</button>
+    </form>
+    <div id="meme_container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
