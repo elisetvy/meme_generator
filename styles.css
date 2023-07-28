@@ -4,7 +4,7 @@
 }
 
 @media screen and (min-width: 800px) {
-  .landing_img, .landing_text, .landing_btn, .meme_disclaimer, #meme_form, #meme_container, .new_meme img {
+  .landing_img, .landing_text, .landing_btn, .meme_help, #meme_form, #meme_container, .new_meme img {
     width: 50vw;
     margin: 0 auto;
   }
