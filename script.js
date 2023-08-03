@@ -1,4 +1,5 @@
 const memeForm = document.getElementById('meme_form');
+const memeContainer = document.getElementById('meme_container');
 
 memeForm.addEventListener('submit', function (event) {
   event.preventDefault();
@@ -9,8 +10,7 @@ memeForm.addEventListener('submit', function (event) {
 
   if (imgURL && topText && bottomText) {
     createMeme(imgURL, topText, bottomText);
-    memeForm.scrollIntoView({
-      top: '100%',
+    memeContainer.scrollIntoView({
       behavior: 'smooth'
     });
   } else {
@@ -21,8 +21,6 @@ memeForm.addEventListener('submit', function (event) {
 });
 
 function createMeme(imgURL, topText, bottomText) {
-  const memeContainer = document.getElementById('meme_container');
-
   const newMeme = document.createElement('div');
   newMeme.classList.add('new_meme');
   newMeme.style.position = 'relative';
